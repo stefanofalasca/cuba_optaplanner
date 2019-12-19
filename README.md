@@ -1,1 +1,1 @@
-"# cuba_optaplanner" 
+POC Optaplanner cuba project. Use OptaPlannerJU class unit test.
