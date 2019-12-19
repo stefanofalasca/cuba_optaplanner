@@ -1,0 +1,15 @@
+package com.company.cubaoptaplanner
+
+
+import com.company.cubaoptaplanner.core.PELecture;
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
+
+global HardSoftScoreHolder scoreHolder;
+
+rule "noNullRoomPeriod"
+    when
+        PELecture( roomNumber == null );
+        PELecture( period == null );
+    then
+        scoreHolder.addHardConstraintMatch(kcontext, -1);
+end

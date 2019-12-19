@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+
+    <!--
+    <scanAnnotatedClasses>
+        <packageInclude>com.baeldung.optaplanner</packageInclude>
+    </scanAnnotatedClasses>
+    -->
+
+    <solutionClass>com.company.cubaoptaplanner.core.PSCourseSchedule</solutionClass>
+    <entityClass>com.company.cubaoptaplanner.core.PELecture</entityClass>
+
+
+    <scoreDirectorFactory>
+        <scoreDrl>com/company/cubaoptaplanner/core/courseSchedule.drl</scoreDrl>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>1</secondsSpentLimit>
+    </termination>
+</solver>
